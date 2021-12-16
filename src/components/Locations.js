@@ -25,11 +25,9 @@ class Locations extends React.Component {
   };
 
   render() {
-    let locationsToDisplay = this.state.data.map((location) => {
+    let locationsToDisplay = this.state.locations.map((location) => {
       return (
-        <div className="location-list">
-          <h1>List of Locations</h1>
-          <button>Show Locations</button>
+        <div>
           <h2>{location.name} </h2>
           <h3>{location.terrain} </h3>
           <h3>{location.terrain} </h3>
@@ -39,6 +37,10 @@ class Locations extends React.Component {
 
     return (
       <div className="locations">
+        <div>
+          <h1>List of Locations</h1>
+          <button>Show Locations</button>
+        </div>
         <div className="locations-container">{locationsToDisplay}</div>
       </div>
     );
