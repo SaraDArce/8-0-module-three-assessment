@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from ".components/Home";
-import Movies from ".components/Movies";
+import Home from "./components/Home";
+import Movies from "./components/Movies";
 import People from "./components/People";
 import Locations from "./components/Locations";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -18,12 +18,6 @@ function App() {
         <Route path="/locations" component={Locations} />
       </Switch>
     </Router>
-
-    // <div className="Home">
-    //   <main>
-    //     <h1>Welcome to GhibliApp</h1>
-    //   </main>
-    // </div>
   );
 }
 
