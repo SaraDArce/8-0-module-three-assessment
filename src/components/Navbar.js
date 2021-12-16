@@ -4,7 +4,7 @@ import "../App.css";
 class Navbar extends React.Component {
   render() {
     return (
-      <div className="Navbar">
+      <nav className="Navbar">
         <Link to="/">
           <img
             className="dog-popcorn"
@@ -18,7 +18,7 @@ class Navbar extends React.Component {
         <Link to="/people">People</Link>
 
         <Link to="/locations">Locations</Link>
-      </div>
+      </nav>
     );
   }
 }
